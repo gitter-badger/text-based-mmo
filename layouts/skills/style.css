@@ -1,0 +1,16 @@
+.skill-list {
+  padding: 20px;
+}
+
+.skill-list img{
+  vertical-align: inherit;
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+}
+
+.skill-list .skill-points{
+  padding-top: 50px;
+  float: right;
+  vertical-align: middle;
+}

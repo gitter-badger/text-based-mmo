@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Skils - Model</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
+  <!-- Web Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Project</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw"></i>&nbsp; Personagem</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Inventario</a></li>
+              <li><a href="#">Skills</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-exclamation fa-fw"></i>&nbsp; Missões</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-check-square-o fa-fw"></i>&nbsp; Progresso da Missão</a></li>
+              <li><a href="#"><i class="fa fa-th-list fa-fw"></i>&nbsp; Lista de Missões</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-map fa-fw"></i>&nbsp; Mapa</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-map fa-fw"></i>&nbsp; Territorio atual</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Safehouses</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><i class="fa fa-globe fa-fw"></i>&nbsp; Mapa Global</a></li>
+              <li><a href="#"><i class="fa fa-car fa-fw"></i>&nbsp; Viajar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-comments fa-fw"></i>&nbsp; Comunicação</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-bell-o fa-fw"></i>&nbsp; Alertas</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><i class="fa fa-comment-o fa-fw"></i>&nbsp; Chat</a></li>
+              <li><a href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Mensagens</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-users fa-fw"></i>&nbsp; Guilda</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Participar</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Criar uma guilda</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-star fa-fw"></i>&nbsp; Procurados</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Caçador de Recompensas</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Ranking</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <p class="navbar-text">user_email@email.com</p>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-fw"></i>&nbsp;</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="text-center">
+      <h2>Skills</h2>
+      <h4>Você possui <strong>3</strong> pontos para usar.</h4>
+      <p>
+        Lembre-se, você pode adquirir habilidades de qualquer um dos 3 tipos, mas verifique se você possui o
+        equipamento necessario para usar essa habilidade.
+      </p>
+    </div>
+    <br>
+    <ul class="nav nav-tabs nav-justified">
+      <li role="presentation" class="active"><a href="#">Corpo a corpo <span class="badge">6</span></a></li>
+      <li role="presentation"><a href="#">Longa Distancia </a></li>
+      <li role="presentation"><a href="#">Magia </a></li>
+    </ul>
+
+    <div class="skill-list">
+      <ul class="list-unstyled">
+        <li>
+          <ul class="list-unstyled list-inline">
+            <li><img src="../icons/789_Lorc_RPG_icons/Icon.7_59.png" alt="" /></li>
+            <li>
+              <h4>Corte Vertical</h4>
+              <p>
+                Requer: Espada, Machado, Espada de Duas mãos <br>
+                Dano: 50 | Custo: 1 | Efeito: Nenhum
+              </p>
+              <p>
+                Ataca o inimigo de cima para baixo.
+              </p>
+            </li>
+            <li class="text-right skill-points">
+              <i class="fa fa-plus fa-fw"></i>&nbsp; 3 &nbsp;<i class="fa fa-minus fa-fw"></i>
+            </li>
+          </ul>
+        </li>
+        <hr>
+        <li>
+          <ul class="list-unstyled list-inline">
+            <li><img src="../icons/789_Lorc_RPG_icons/Icon.6_26.png" alt="" /></li>
+            <li>
+              <h4>Investida</h4>
+              <p>
+                Requer: Espada+Escudo, Machado+Escudo. <br>
+                Dano: 60 | Custo: 2 | Efeito: 35% de chance de remover PA. | Recarga: 2 Turnos
+              </p>
+              <p>
+                Avança contra o inimigo causando dano e podendo lhe atordoar.
+              </p>
+            </li>
+            <li class="text-right skill-points">
+              <i class="fa fa-plus fa-fw"></i>&nbsp; 1 &nbsp;<i class="fa fa-minus fa-fw"></i>
+            </li>
+          </ul>
+        </li>
+        <hr>
+        <li>
+          <ul class="list-unstyled list-inline">
+            <li><img src="../icons/789_Lorc_RPG_icons/Icons8_10.png" alt="" /></li>
+            <li>
+              <h4>Muralha</h4>
+              <p>
+                Requer: Escudo <br>
+                Dano: 0 | Custo: 1 | Efeito: Aumenta a chance de bloqueio em 40% por 1 turno
+ | Recarga: 1 Turnos
+              </p>
+              <li class="text-right skill-points">
+                <i class="fa fa-plus fa-fw"></i>&nbsp; 2 &nbsp;<i class="fa fa-minus fa-fw"></i>
+              </li>
+            </li>
+            <li>
+
+            </li>
+          </ul>
+        </li>
+        <hr>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  </body>
+</html>
