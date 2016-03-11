@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Inventory</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
+  <!-- Web Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Quests</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw"></i>&nbsp; Personagem</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Inventario</a></li>
+                <li><a href="#">Skills</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fa fa-exclamation fa-fw"></i>&nbsp; Missões</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-check-square-o fa-fw"></i>&nbsp; Progresso da Missão</a></li>
+                <li><a href="#"><i class="fa fa-th-list fa-fw"></i>&nbsp; Lista de Missões</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fa fa-map fa-fw"></i>&nbsp; Mapa</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-map fa-fw"></i>&nbsp; Territorio atual</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Safehouses</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-globe fa-fw"></i>&nbsp; Mapa Global</a></li>
+                <li><a href="#"><i class="fa fa-car fa-fw"></i>&nbsp; Viajar</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fa fa-comments fa-fw"></i>&nbsp; Comunicação</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-bell-o fa-fw"></i>&nbsp; Alertas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-comment-o fa-fw"></i>&nbsp; Chat</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Mensagens</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fa fa-users fa-fw"></i>&nbsp; Guilda</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Participar</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Criar uma guilda</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fa fa-star fa-fw"></i>&nbsp; Procurados</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Caçador de Recompensas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Ranking</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <p class="navbar-text">user_email@email.com</p>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-fw"></i>&nbsp;</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="quests">
+        <div class="main-quests">
+          <h2>Main quests</h2>
+          <hr>
+          <ul class="list-unstyled">
+            <li>
+              <div class="row">
+                <div class="col-md-10">
+                  <h4>Que tal uma pequena luta?</h4>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#quest-modal">Começar</button>
+                </div>
+                <div class="modal fade" id="quest-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Que tal uma pequena luta?</h4>
+                    </div>
+                    <div class="modal-body">
+                      Vejo que já conheceu o Almirante. Ele é um homem bastante excêntrico hein?
+                      Mas não se preocupe com isso, garanto que ele não morde.
+                      <br>
+                      <br>
+                      Eu sou o tenente “nome legal aqui”. Sim, sou bastante novo para ser um tenente, mas não
+                      se engane com a minha aparência. Vejamos… hm… é a sua primeira missão certo?
+                      Já lutou antes? Pela sua cara vejo que não. Pois bem, que tal praticar um pouco
+                      antes de eu lhe entregar uma missão de verdade.
+                      <br>
+                      <br>
+                      Ali, derrote aquele soldado na arena.
+
+                      <hr>
+                      Recompensas: 150 XP e Espada simples.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Aceitar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <hr>
+            </li>
+          </ul>
+        </div>
+        <div class="side-quests">
+          <h2>Side quests</h2>
+          <hr>
+          <ul class="list-unstyled">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  </body>
+</html>
