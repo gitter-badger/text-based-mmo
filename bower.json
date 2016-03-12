@@ -1,0 +1,19 @@
+{
+  "name": "text-based-mmo",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Joao Paulo Ribeiro"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ribeirojpn/text-based-mmo",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ]
+}
