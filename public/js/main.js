@@ -19,4 +19,9 @@ angular.module('textmmo',['ngRoute','ngResource']).config(function($routeProvide
     controller: 'SkillsController'
   });
 
+  $routeProvider.when('/quests',{
+    templateUrl: 'partials/quests.html',
+    controller: 'QuestsController'
+  });
+
 });
