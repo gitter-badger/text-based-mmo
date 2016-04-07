@@ -19,6 +19,12 @@
       </div>
     </div>
     <div class="char-status">
+      <div class="progress" style="width:50%">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{char.hp}}"
+         aria-valuemin="0" aria-valuemax="{{char.max_hp}}" style="width: {{char.hp/10}}%;">
+           <span class="">{{char.hp}} / {{char.max_hp}}</span>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <div class="char-att">

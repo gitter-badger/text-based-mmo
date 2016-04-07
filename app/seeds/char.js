@@ -10,7 +10,7 @@ module.exports = function(){
     dodge: 22,
     block: 86,
     max_hp: 1000,
-    hp: 1000,
+    hp: 723,
     exp: 832,
     expertise: {
       close_range: 9,
