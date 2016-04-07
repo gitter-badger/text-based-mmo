@@ -1,4 +1,4 @@
-angular.module('textmmo',['ngRoute','ngResource']).config(function($routeProvider){
+angular.module('textmmo',['ngRoute','ngResource','ngSanitize']).config(function($routeProvider){
   $routeProvider.when('/',{
     templateUrl: 'partials/status.html',
     controller: 'StatusController'
