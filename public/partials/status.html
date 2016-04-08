@@ -21,8 +21,14 @@
     <div class="char-status">
       <div class="progress" style="width:50%">
         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{char.hp}}"
-         aria-valuemin="0" aria-valuemax="{{char.max_hp}}" style="width: {{char.hp/10}}%;">
-           <span class="">{{char.hp}} / {{char.max_hp}}</span>
+         aria-valuemin="0" aria-valuemax="{{char.max_hp}}" style="width: {{getLifePercentage()}}%;">
+           <span class="">HP {{char.hp}} / {{char.max_hp}}</span>
+        </div>
+      </div>
+      <div class="progress" style="width:50%">
+        <div class="progress-bar progress-bar-exp" role="progressbar" aria-valuenow="{{char.exp}}"
+         aria-valuemin="0" aria-valuemax="{{1000}}" style="width: {{(char.exp/10)}}%;">
+           <span class="">EXP {{char.exp}} / 1000</span>
         </div>
       </div>
       <div class="row">

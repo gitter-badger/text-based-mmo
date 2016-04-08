@@ -9,8 +9,8 @@ module.exports = function(){
     critical: 30,
     dodge: 22,
     block: 86,
-    max_hp: 1000,
-    hp: 723,
+    max_hp: 1120,
+    hp: 632,
     exp: 832,
     expertise: {
       close_range: 9,
@@ -24,9 +24,20 @@ module.exports = function(){
     },
     safehouse: 'Capital - Distrito B',
     skills:{
-      available:[],
-      using:[]
-    }
+      taked:[
+        {
+          skill_id: 1,
+          level: 2
+        }
+      ],
+      using:[
+        {
+          skill_id: 1,
+          level: 2
+        }
+      ]
+    },
+    free_skill_points:3
   };
 
   return charDemo;

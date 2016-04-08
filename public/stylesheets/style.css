@@ -53,6 +53,10 @@
   height: 60px;
 }
 
+.progress-bar-exp {
+  background-color: #9f9f9f;
+}
+
 /* Inventory */
 
 .inventory-list img{

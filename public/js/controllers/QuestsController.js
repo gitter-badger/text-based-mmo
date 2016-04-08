@@ -1,5 +1,5 @@
 angular.module('textmmo').controller('QuestsController', function($scope,$resource){
-  var Quests = $resource('/quests');
+  var Quests = $resource('/api/quests');
 
   $scope.quests = [];
 

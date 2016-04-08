@@ -8,5 +8,5 @@ module.exports = function (app){
     .get(controller.getInventory);
 
   app.route('/skills')
-    .get(controller.getStatus);
+    .get(controller.getSkills);
 };

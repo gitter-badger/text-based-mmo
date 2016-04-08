@@ -16,11 +16,11 @@ module.exports = function(){
       objective: 'soldier',
       amount: 1,
       reward_exp: 100,
-      reward_itens: ['sword','shield']
+      reward_itens: ['Espada Simples','Escudo de casca de arvore']
     },
     {
       title: 'Limpando as ruas',
-      id:2,
+      id: 2,
       level_min: 2,
       description: '<p>Meus parabéns por ter ganho sua primeira batalha. Você deixou ele em maus bocados hein?\
       Agora que tal uma missão de verdade? Temos alguns arruaceiros procurando encrenca por ai.\
@@ -32,8 +32,28 @@ module.exports = function(){
       objective: 'thief',
       amount: 3,
       reward_exp: 150,
-      reward_itens: ['armor']
+      reward_itens: ['Armadura basica']
+    },
+    {
+      title: 'Impondo ordem',
+      id: 3,
+      level_min: 3,
+      description: '<p>O Almirante me pediu pra agradecê-lo. Disse que fazia tempo\
+      em que não se divertia baten… digo, prendendo criminosos.</p>\
+      <p>A missão que tenho pra você agora deve ser tratada com uma certa confidencialidade.\
+      Nossos acampamentos médicos mais ao sul tem recebido muitos soldados relatando terem\
+      sido atacados por outros soldados no intuito de roubar-lhe seus pertences. Encontrez\
+      alguns destes indivíduos e os traga aqui para terem uma conversinha com o Almirante. \
+      Fique a vontade para tomar como seu tudo que encontrar.</p>\
+      <p>Provavelmente você encontrara alguns deles nos becos da cidade baixa</p>',
+      objective_description: 'Lute contra 5 jogadores',
+      type: 'pvp',
+      objective: 'fight',
+      amount: 5,
+      reward_exp: 450,
+      reward_itens: ['Armadura Reforçada','Espada Curta']
     }
+
   ];
 
   return questList;

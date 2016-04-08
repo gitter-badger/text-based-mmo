@@ -9,4 +9,10 @@ angular.module('textmmo').controller('StatusController', function($scope,$resour
     console.log(erro);
   });
 
+  $scope.getLifePercentage = function () {
+    var percentage = ($scope.char.hp/$scope.char.max_hp) * 100;
+
+    return percentage;
+  };
+
 });
