@@ -8,72 +8,36 @@
     </p>
   </div>
   <br>
-  <ul class="nav nav-tabs nav-justified">
-    <li role="presentation" class="active"><a href="#">Corpo a corpo <span class="badge">6</span></a></li>
-    <li role="presentation"><a href="#">Longa Distancia </a></li>
-    <li role="presentation"><a href="#">Magia </a></li>
-  </ul>
-
-  <div class="skill-list">
-    <ul class="list-unstyled">
-      <li>
-        <ul class="list-unstyled list-inline">
-          <li><img src="images/icons/skills/01.png" alt="" /></li>
-          <li>
-            <h4>Corte Vertical</h4>
-            <p>
-              Requer: Espada, Machado, Espada de Duas mãos <br>
-              Dano: 50 | Custo: 1 | Efeito: Nenhum
-            </p>
-            <p>
-              Ataca o inimigo de cima para baixo.
-            </p>
-          </li>
-          <li class="text-right skill-points">
-            <i class="fa fa-plus fa-fw"></i>&nbsp; 3 &nbsp;<i class="fa fa-minus fa-fw"></i>
-          </li>
-        </ul>
-      </li>
-      <hr>
-      <li>
-        <ul class="list-unstyled list-inline">
-          <li><img src="images/icons/skills/02.png" alt="" /></li>
-          <li>
-            <h4>Investida</h4>
-            <p>
-              Requer: Espada+Escudo, Machado+Escudo. <br>
-              Dano: 60 | Custo: 2 | Efeito: 35% de chance de remover PA. | Recarga: 2 Turnos
-            </p>
-            <p>
-              Avança contra o inimigo causando dano e podendo lhe atordoar.
-            </p>
-          </li>
-          <li class="text-right skill-points">
-            <i class="fa fa-plus fa-fw"></i>&nbsp; 1 &nbsp;<i class="fa fa-minus fa-fw"></i>
-          </li>
-        </ul>
-      </li>
-      <hr>
-      <li>
-        <ul class="list-unstyled list-inline">
-          <li><img src="images/icons/skills/03.png" alt="" /></li>
-          <li>
-            <h4>Muralha</h4>
-            <p>
-              Requer: Escudo <br>
-              Dano: 0 | Custo: 1 | Efeito: Aumenta a chance de bloqueio em 40% por 1 turno
-| Recarga: 1 Turnos
-            </p>
-            <li class="text-right skill-points">
-              <i class="fa fa-plus fa-fw"></i>&nbsp; 2 &nbsp;<i class="fa fa-minus fa-fw"></i>
-            </li>
-          </li>
-          <li>
-
-          </li>
-        </ul>
-      </li>
-      <hr>
+  <div class="" ng-init="tab = 1">
+    <ul class="nav nav-tabs nav-justified">
+      <li role="presentation" id="close-skill-tab" ng-class="{ active: tab === 1}"><a href="" ng-click="tab = 1" >Corpo a corpo <span class="badge">6</span></a></li>
+      <li role="presentation" id="long-skill-tab" ng-class="{ active: tab === 2}"><a href="" ng-click="tab = 2">Longa Distancia </a></li>
+      <li role="presentation" id="magic-skill-tab" ng-class="{ active: tab === 3}"><a href="" ng-click="tab = 3">Magia </a></li>
     </ul>
+
+    <div class="skill-list">
+      <ul class="list-unstyled">
+        <li ng-repeat="skill in getList()">
+          <ul class="list-unstyled list-inline">
+            <li><img ng-src="/{{skill.img_url}}" alt="" /></li>
+            <li>
+              <h4>{{skill.name}}</h4>
+              <p>
+                Requer: Espada, Machado, Espada de Duas mãos <br>
+                Dano: {{skill.damage}} | Custo: {{skill.cost}} | Efeito: {{skill.effect_description}}
+              </p>
+              <p>
+                {{skill.description}}
+              </p>
+            </li>
+            <li class="text-right skill-points">
+              <i class="fa fa-plus fa-fw"></i>&nbsp; 0 &nbsp;<i class="fa fa-minus fa-fw"></i>
+            </li>
+          </ul>
+          <hr>
+        </li>
+      </ul>
+    </div>
   </div>
+
 </div>
