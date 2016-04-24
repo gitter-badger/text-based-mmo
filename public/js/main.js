@@ -2,26 +2,25 @@ angular.module('textmmo',['ngRoute','ngResource','ngSanitize']).config(function(
   $routeProvider.when('/',{
     templateUrl: 'partials/status.html',
     controller: 'StatusController'
-  });
-
-  $routeProvider.when('/status',{
+  })
+  .when('/status',{
     templateUrl: 'partials/status.html',
     controller: 'StatusController'
-  });
-
-  $routeProvider.when('/inventory',{
+  })
+  .when('/inventory',{
     templateUrl: 'partials/inventory.html',
     controller: 'InventoryController'
-  });
-
-  $routeProvider.when('/skills',{
+  })
+  .when('/skills',{
     templateUrl: 'partials/skills.html',
     controller: 'SkillsController'
-  });
-
-  $routeProvider.when('/quests',{
+  })
+  .when('/quests',{
     templateUrl: 'partials/quests.html',
     controller: 'QuestsController'
+  })
+  .when('/maps/current',{
+    templateUrl: 'partials/current-map.html',
+    controller: 'CurrentMapController'
   });
-
 });
